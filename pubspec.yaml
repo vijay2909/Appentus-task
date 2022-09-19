@@ -1,0 +1,68 @@
+name: appentus_interview_task
+description: 2nd Round Interview Task
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management package
+  flutter_riverpod: ^1.0.4
+
+  # For local database
+  sqflite: ^2.0.3+1
+  path: ^1.8.2
+
+  # help to create model classes
+  freezed_annotation: ^2.1.0
+  json_annotation: ^4.6.0
+
+  # picking images from the image library or taking new pictures with the camera.
+  image_picker: ^0.8.5+3
+
+  # For save images into gallery external storage
+  gallery_saver: ^2.3.2
+
+  # to show success and failure msgs
+  fluttertoast: ^8.0.9
+
+  # Functional programming thingies
+  dartz: ^0.10.1
+
+  # To cache network images (prevent image to load)
+  cached_network_image: ^3.2.2
+
+  # For Network call
+  dio: ^4.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  build_runner: ^2.2.0
+  freezed: ^2.1.0+1
+  json_serializable: ^6.3.1
+
+dependency_overrides:
+  path: ^1.8.2
+  
+
+flutter:
+
+  uses-material-design: true
+
+  
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
